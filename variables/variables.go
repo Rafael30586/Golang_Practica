@@ -12,13 +12,16 @@ var per1, per2, per3 string = "Mario", "Link", "Cloud" // De esta manera se pued
 var coso1, coso2 = 45, true                            // De esta manera se pueden declarar variasd vairables de distintos tipos en un sola línea de código
 
 func main() {
-	var edad int = 39
+	var edad int8 = 35 // Los int pueden ser int8, int16, int32 o int64 dependiiendo del rango que abarcan.
 	var altura float32 = 1.82
 	var segundoNombre string = "Rafael"
 	var primerNombre = "Fernando" // No hace falta aclarar de que tipo es la variable cuando la inicializamos al declararla. El tipo de dato es inferido.
 	apellido := "Alvarez"         // Esta forma de declarar variables solo sirve dentro de funciones
 	peso = 69
 	recibido := true
+	const PI = 3.14
+	var numeraso float64 = 4.381728439404
+	var boolSinInicializar bool
 
 	var ( // Así se declaran variables en un bloque
 		fruta1 = "naranja"
@@ -32,5 +35,11 @@ func main() {
 	fmt.Println("El peso es: ", peso)
 	fmt.Println(recibido)
 	fmt.Println("Me gusta la", fruta1, "y la", fruta2)
+	fmt.Println("PI es igual a ", PI)
+	fmt.Printf("Primer nombre, valor: %v y tipo: %T\n", primerNombre, primerNombre)
+	fmt.Println("El numeraso es: ", numeraso)
+	fmt.Println("Un bool sin inicializar es:", boolSinInicializar)
+	fmt.Printf("El tipo de la edad es: %T\n", edad)
+	fmt.Printf("El tipo de DNI es: %T\n", dni)
 
 }
