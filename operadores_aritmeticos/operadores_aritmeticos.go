@@ -12,4 +12,5 @@ func main() {
 	edad := 23
 	edad++
 	fmt.Println("La edad es:", edad)
+
 }
