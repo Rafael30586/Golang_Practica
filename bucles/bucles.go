@@ -24,8 +24,17 @@ func main() {
 
 	var numeros = [...]int16{34, 90, 120, 82, 50, 12, 94}
 
-	for indice, valor := range numeros {
+	for indice, valor := range numeros { // Así se hacen los bucles for each en go
 		fmt.Println("El índice es", indice, "y el valor es", valor)
+	}
+
+	fmt.Println("-----------------------------------")
+
+	var iterador = 0
+
+	for iterador < 5 { // Esto es lo más parecido a un bucle while en Go
+		fmt.Println("El iterador vale", iterador)
+		iterador++
 	}
 
 }
