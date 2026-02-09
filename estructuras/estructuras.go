@@ -13,6 +13,7 @@ func main() {
 	pers1.mascota.nombre = "Firulais"
 	pers1.mascota.edad = 4
 	pers1.mascota.especie = "Perro"
+	pers1.mascota.ruido = "guau guau"
 
 	mostrarPersona(pers1)
 }
@@ -29,6 +30,7 @@ type Mascota struct {
 	nombre  string
 	especie string
 	edad    int8
+	ruido   string
 }
 
 func mostrarPersona(persona Persona) {
