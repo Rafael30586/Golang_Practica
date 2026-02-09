@@ -14,6 +14,7 @@ func main() {
 		fmt.Println("¡miau! ¡miau!")
 	}
 	Gato()
+	Sumar_Numeros()
 }
 
 func Saludar() {
@@ -41,3 +42,14 @@ func NombrarPersonajes(personajes ...string) { //Esta es una función variádica
 func init() { // Esta es la función init, no tiene parámetros ni retorna nada. Está presente en cada paquete y es llamada cuando el paquete es...
 	fmt.Println("Ya viene...") //... inicializado. Se ejecuta antes de la función main y su propósito es el de inicializar variables globales.
 } // Cada paquete puede tener más de una función init.
+
+func Sumar_Numeros() {
+	var n1 int
+	var n2 int
+	fmt.Println("Ingrese el primer número")
+	fmt.Scanln(&n1)
+	fmt.Println("Ingrese el segundo número")
+	fmt.Scanln(&n2)
+	fmt.Println("El resultado es:", (n1 + n2))
+
+}
