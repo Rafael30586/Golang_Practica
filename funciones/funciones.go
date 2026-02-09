@@ -10,6 +10,10 @@ func main() {
 	Sumar(16, 9)
 	fmt.Println(Presentarse("Gustavo", 27))
 	NombrarPersonajes("Master Chief", "Kratos", "Kirby", "Sonic", "Link")
+	var Gato = func() { // Esta es una función anónima siendo asignada a una variable
+		fmt.Println("¡miau! ¡miau!")
+	}
+	Gato()
 }
 
 func Saludar() {
@@ -25,7 +29,7 @@ func Presentarse(nombre string, edad int) string {
 	return presentacion
 }
 
-func NombrarPersonajes(personajes ...string) {
+func NombrarPersonajes(personajes ...string) { //Esta es una función variádica. Se les llama así a las funciones que tienen estos parámetros
 	longitud := len(personajes)
 
 	for i := 0; i < longitud; i++ {
@@ -33,3 +37,7 @@ func NombrarPersonajes(personajes ...string) {
 	}
 
 }
+
+func init() { // Esta es la función init, no tiene parámetros ni retorna nada. Está presente en cada paquete y es llamada cuando el paquete es...
+	fmt.Println("Ya viene...") //... inicializado. Se ejecuta antes de la función main y su propósito es el de inicializar variables globales.
+} // Cada paquete puede tener más de una función init.
