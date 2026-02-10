@@ -15,6 +15,9 @@ func main() {
 	}
 	Gato()
 	Sumar_Numeros()
+	fmt.Println(MultiplicarPorDos(45, 90))
+	var a, b = MultiplicarPorDos(60, 15) // Esta función que retorna dos números les está asignando valores a las dos variables.
+	fmt.Print("a y b son", a, b)
 }
 
 func Saludar() {
@@ -51,5 +54,8 @@ func Sumar_Numeros() {
 	fmt.Println("Ingrese el segundo número")
 	fmt.Scanln(&n2)
 	fmt.Println("El resultado es:", (n1 + n2))
+}
 
+func MultiplicarPorDos(n1 int, n2 int) (int, int) { // Las funcionaes pueden retornar más de un valor, por ejemplo, esta función retorna dos valores...
+	return 2 * n1, 2 * n2 //... de tipo entero
 }
