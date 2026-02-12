@@ -13,7 +13,7 @@ func main() {
 	var t = &b // Esta variable t también es un puntero. El lenguaje infiere que lo es.
 	fmt.Println("t es igual a:", t)
 	fmt.Println("&t es igual a:", &t)
-	fmt.Println("p apunta a:", *t) // En este caso usamos el asterisco para saber el valor al que apunta el puntero.
+	fmt.Println(" apunta a:", *t) // En este caso usamos el asterisco para saber el valor al que apunta el puntero.
 
 	*t = 1020 // Así cambiamos de manera indirecta el valor de b
 	fmt.Println("Ahora b vale:", b)
