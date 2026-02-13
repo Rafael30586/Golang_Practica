@@ -33,4 +33,13 @@ func main() {
 	frutas3[1] = "frambuesa" // cuando cambio a frutas3 también cambias frutas
 	fmt.Println("Ahota frutas es ", frutas)
 
+	var marcas_autos = [...]string{"Fiat", "Renault", "Ford", "Ferrari"}
+	fmt.Println("Las marcas de autos son: ", marcas_autos)
+	CambiarMarca(&marcas_autos, 0, "Audi")
+	fmt.Println("Ahota las marcas de autos son", marcas_autos)
+
+}
+
+func CambiarMarca(marcas *[4]string, posicion int8, marca string) { // Esta función cambia el array que le psamos como argumento por referencia.
+	marcas[posicion] = marca
 }
