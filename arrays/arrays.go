@@ -40,6 +40,6 @@ func main() {
 
 }
 
-func CambiarMarca(marcas *[4]string, posicion int8, marca string) { // Esta función cambia el array que le psamos como argumento por referencia.
+func CambiarMarca(marcas *[4]string, posicion int8, marca string) { // Esta función cambia el array que le pasamos como argumento por referencia.
 	marcas[posicion] = marca
 }

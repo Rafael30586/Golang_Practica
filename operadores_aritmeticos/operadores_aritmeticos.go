@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"operadores_aritmeticos/servicios"
+)
 
 func main() {
 	suma := 45 + 12
@@ -12,5 +15,7 @@ func main() {
 	edad := 23
 	edad++
 	fmt.Println("La edad es:", edad)
+
+	fmt.Println(servicios.Sumar(56, 12))
 
 }
